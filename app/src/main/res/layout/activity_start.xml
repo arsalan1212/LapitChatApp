@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.arsalankhan.lapitchatapp.StartActivity">
+
+    <TextView
+        android:id="@+id/tv_startTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Lapit \nChat App"
+        android:gravity="center"
+        android:textColor="#ebe6f6"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+       />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#fff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="@string/already_have_account"
+        android:onClick="GoToLoginActivity"
+        android:layout_below="@id/tv_startTextView"/>
+    <Button
+        android:layout_below="@id/btnLogin"
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/btn_need_an_account_text"
+        android:backgroundTint="#fff"
+        android:onClick="GoToRegistrationActivity"/>
+</RelativeLayout>

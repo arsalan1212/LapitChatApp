@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/messageUserProfile"
+        android:src="@drawable/avatar_default"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/messageUserProfile"
+        android:text="Hi, there whatsup"
+        android:textColor="#ffffff"
+        android:id="@+id/messageTextView"
+        android:background="@drawable/custom_message_bg_primary"
+        android:padding="12dp"
+        android:layout_marginLeft="8dp"/>
+</RelativeLayout>

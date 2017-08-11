@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.arsalankhan.lapitchatapp.AccountSettingActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setting_profile_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/avatar_default"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        />
+
+    <TextView
+        android:id="@+id/account_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Arsalan khan"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/account_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_display_name"
+        android:layout_marginTop="15dp"
+        android:text="Hi there, I'm using Lapit chat"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/account_btn_change_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/change_image"
+        android:textColor="@color/colorPrimary"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/account_status"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:onClick="ChangeProfileImage"
+        android:backgroundTint="#fff"
+        />
+
+    <Button
+        android:id="@+id/account_btn_change_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/account_btn_change_image"
+        android:layout_alignStart="@+id/account_btn_change_image"
+        android:layout_below="@+id/account_btn_change_image"
+        android:layout_marginTop="15dp"
+        android:text="@string/change_status"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:onClick="ChangeStatus"/>
+
+</RelativeLayout>
